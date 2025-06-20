@@ -1,0 +1,146 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(209, 230, 255);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	display: flex;
+	align-items: start;
+	color: white;
+	background-color: rgb(47, 111, 250);
+	height: 70px;
+}
+
+header h1 {
+	margin: 0;
+	margin-left: 70px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+form {
+	background-color: white;
+	border-radius: 20px;
+	width: 30vw;
+	height: 20vh;
+	margin: 50px;
+	margin-bottom: 0;
+}
+
+form h2 {
+	margin: 20px;
+}
+
+form input {
+	margin-left: 20px;
+	height: 40px;
+	border-radius: 10px;
+	border: 1px solid gray;
+	padding-left: 10px;
+	width: 60%;
+	box-sizing: border-box;
+}
+
+form button {
+	height: 40px;
+	border-radius: 10px;
+	color: white;
+	background-color: rgb(47, 111, 250);
+	border: transparent;
+	width: 30%;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.task-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.task-container section {
+	margin: 25px;
+	width: calc(25vw-50px);
+}
+
+.task-container section:first-child {
+	margin-left: 50px;
+}
+
+section h5 {
+	display: flex;
+	background-color: rgb(215, 215, 215);
+	height: 40px;
+	width: 80px;
+	padding: 0 5px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	color: gray;
+}
+
+section ul {
+	margin: 0;
+	padding: 0;
+}
+
+section ul li {
+	align-items: center;
+	display: flex;
+	background-color: white;
+	height: 60px;
+	border-radius: 10px;
+	padding-left: 10px;
+	list-style-type: none;
+	margin: 10px;
+	margin-left: 0;
+	width: 15vw;
+	border-left: 7px solid rgb(215, 215, 215);
+}
+
+section ul button {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	background-color: rgb(194, 58, 58);
+	color: white;
+	height: 60px;
+	border: none;
+	border-radius: 10px;
+	padding-left: 10px;
+	margin: 10px;
+	margin-left: 0;
+	width: 16vw;
+	cursor: pointer;
+}
+
+.in-process h5 {
+	background-color: rgb(157, 184, 255);
+	color: rgb(58, 58, 255);
+}
+
+.in-process ul li {
+	border-left: 7px solid rgb(157, 184, 255);
+}
+
+.done h5 {
+	background-color: rgb(187, 254, 178);
+	color: rgb(0, 148, 0);
+}
+
+.done ul li {
+	border-left: 7px solid rgb(187, 254, 178);
+}
+
+.bucket h5 {
+	background-color: rgb(251, 161, 161);
+	color: rgb(187, 1, 1);
+}
+
+.bucket ul li {
+	border-left: 7px solid rgb(251, 161, 161);
+}
