@@ -18,7 +18,7 @@ header h1 {
 	margin-left: 70px;
 }
 
-main {
+.board {
 	display: flex;
 	flex-direction: column;
 }
@@ -42,7 +42,8 @@ form input {
 	border-radius: 10px;
 	border: 1px solid gray;
 	padding-left: 10px;
-	width: 200px;
+	width: 60%;
+	box-sizing: border-box;
 }
 
 form button {
@@ -51,8 +52,9 @@ form button {
 	color: white;
 	background-color: rgb(47, 111, 250);
 	border: transparent;
-	width: 150px;
+	width: 30%;
 	cursor: pointer;
+	box-sizing: border-box;
 }
 
 .task-container {
@@ -100,7 +102,7 @@ section ul li {
 	border-left: 7px solid rgb(215, 215, 215);
 }
 
-section ul button {
+.clear-button {
 	align-items: center;
 	justify-content: center;
 	display: flex;
@@ -141,4 +143,16 @@ section ul button {
 
 .bucket ul li {
 	border-left: 7px solid rgb(251, 161, 161);
+}
+
+.task-empty {
+	height: 60px;
+	margin: 10px 0;
+	background-color: transparent;
+	border: 2px dashed #ccc;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 60px;
+	color: #999;
+	padding: 0 10px;
 }
